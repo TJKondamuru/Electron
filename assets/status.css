@@ -1,0 +1,75 @@
+.status-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  .status-track .complete {
+    color: #fe8125;
+  }
+  .status-track .current {
+    color: #ccc;
+  }
+  .status-track .future {
+    color: #888;
+  }
+  .status-track > * {
+    text-align: center;
+    line-height: 1.9;
+    flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 0px 2;
+    position: relative;
+  }
+  .status-track > * * {
+    display: block;
+  }
+  .status-track > * label {
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+  }
+  .status-track > * i.fa {
+    font-size: 1.3em;
+  }
+  .status-track > *:first-child {
+    text-align: left;
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 0px 1;
+  }
+  .status-track > *:not(:first-child)::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -50%;
+    right: 50%;
+    top: 0.5em;
+    border-top: 0.2em solid;
+    margin: 0 1em;
+  }
+  .status-track > *:nth-child(2)::before {
+    margin-left: 1.5em;
+  }
+  .status-track > *:last-child {
+    text-align: right;
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 0px 1;
+  }
+  .status-track > *:last-child::before {
+    right: 0.5em;
+    left: -100%;
+  }
+  .spacer {
+    height: 2em;
+  }
+  
+  
